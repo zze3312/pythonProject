@@ -38,7 +38,6 @@ print(a / b)
 # 제곱표시 : **
 print(a ** b)
 
-# 예제 48p
 print( (10*18**2)+(2*11) )
 
 # 나머지 연산자 : %
@@ -47,7 +46,6 @@ print(7 % 3)
 # 몫 연산자 : //
 print(7 // 3)
 
-# 예제 49p
 a = 14 // 3
 b = 14 % 3
 print("몫은 %d 입니다" %a)
@@ -61,14 +59,12 @@ print("나머지는 %d 입니다" %b)
 #  - ''', """ 을 사용하는 경우 : 문자열 안에 띄어쓰기, 들여쓰기, 줄바꿈 등 사용하고 싶은 경우
 #  - ', " 둘다 사용하는 이유 : 문자열안에 포함시키고 싶은 경우 사용하기 위해
 
-# 교재 51p
 food = "Python's favorite food is perl"
 print(food)
 bank = " 1000000 payment"
 x = food + bank
 print(x)
 
-# 교재 52p
 food2 = '"Python is very easy." he says.'
 print(food2)
 
@@ -100,7 +96,6 @@ word = head + tail
 print ( word )
 
 #  - * : 문자열 반복
-# 교재 55p
 line = "=" * 50
 print( line )
 print("My Program")
@@ -110,11 +105,9 @@ print( line )
 
 #  - 문자열의 길이 : len() 함수 사용
 # ※ 함수 : 기능을 하는 묶음, 매개변수 : 함수에 넣는 데이터
-# 교재 56p
 a = "Life is to short"
 print( len(a) )
 
-# 예제 56p
 b = "You need python"
 print( len(b) )
 
@@ -125,7 +118,6 @@ print( len(b) )
 
 # 문자열 인덱싱(Indexing) : 문자열 각 문자에 번호를 매겨 해당 번호를 이용하는 방법, 0부터 시작, 음수 : 뒤에서 부터 불러움
 # 문자열 슬라이싱(Slicing) : 문자열을 자르는 방법
-# 교재 57p
 a = "Life is too short, You need Python"
 print(a[5])
 

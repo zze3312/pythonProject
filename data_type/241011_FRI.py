@@ -23,10 +23,8 @@ student_kor_avg = student_kor_sum / student_cnt
 print(student_kor_avg)
 
 # 문자열 슬라이싱(slicing) : 문자열을 자른다
-# 교재 58p
 a = "Life is too short, You need Python"
 b = a[0] + a[1] + a[2] + a[3]
-# 교재 59p
 c = a[0:4]
 # b, c 결과는 같지만 c처럼 사용하기
 print(b)
@@ -47,7 +45,6 @@ print(num_sum)
 num_last2 = phone_number[9:]
 print(num_last2)
 
-# 교재 60p
 a_slice = a[19:]
 print(a_slice)
 a_slice2 = a[:]
@@ -57,7 +54,6 @@ print(a_slice3)
 a_slice4 = a[-6:]
 print(a_slice4)
 
-# 교재 61p
 data = "20230331Rainy"
 year = data[0:4]
 mon = data[4:6]
@@ -67,7 +63,6 @@ weather = data[8:]
 print(year + "년 " + mon + "월 " + day + "일 날씨 : " + weather )
 
 # 대입을 통한 수정도 가능
-# 교재 62p
 a = "Pithon"
 # a[1] = 'y' (오류)
 b = a[:1] + 'y' + a[2:]
@@ -89,24 +84,20 @@ print("실수형 숫자 : %f" % 3.14)
 print("오늘은 %s년 %s월 %s일 날씨는 %s 입니다" %(year, mon, day, weather))
 
 # 포매팅 연산자 %d와 %를 같이 쓸 때는 %%를 쓴다
-# 교재 65p
 err_percent = 90
 print("Error is %d%%." %err_percent)
 
 # 포맷코드와 숫자 함께 사용
 # 1. 정렬
-# 교재 66p
 print("%10s" % "hi")
 print("%10s jane." % "hi") # 오른쪽 정렬
 print("%-10s jane." % "hi") # 왼쪽 정렬
 
 # 2. 소수점
-# 교재 67p
 print("%0.4f" % 3.42134234)
 print("%10.4f" % 3.42134234)
 
 # 3. format 함수를 사용한 포매팅
-# 교재 67~70
 print("I eat {0} appels." .format(3))
 print("I eat {0} appels." .format("five"))
 number = 3
@@ -160,7 +151,6 @@ print("-" * 60)
 #  - find() : 문자의 위치
 #  - index() : 문자의 위치
 #  - join() : 문자열 삽입
-# 교재 74p
 join_str = ",".join("abcd")
 print(join_str)
 join_str2 = ",".join(['a', 'b', 'c', 'd'])
@@ -176,31 +166,26 @@ print(join_str2)
 # 리스트형
 #  - 리스트명 = [요소1, 요소2, 요소3, ...]
 #  - 빈 리스트 만들때 : 리스트명 = list()
-# 교재 79p
 list_a = [1, 2, 3, ['a', 'b', 'c']]
 print(list_a[0])
 print(list_a[-1])
 print(list_a[3])
 
-# 교재 80p
 list_b = [1, 2, ['a', 'b', ['Life', 'is']]]
 print(list_b[2][2][0])
 
 # 리스트의 슬라이싱 : 문자열의 슬라이싱과 사용방법은 같으나 마지막 요소 출력여부가 다름
-# 교재 81p
 slice_list = [1, 2, 3, 4, 5]
 print(slice_list[0:2])
 print(slice_list[2:])
 print(slice_list[:3])
 
 # 중첩된 리스트에서의 슬라이싱
-# 교재 81p
 slice_list2 = [1, 2, 3, ['a', 'b', 'c'], 4, 5]
 print(slice_list2[2:5])
 print(slice_list2[3][:2])
 
 # 리스트의 연산
-# 교재 82~83p
 lst_a = [1, 2, 3]
 lst_b = [4, 5, 6]
 lst_c = ['4', '5', '6']
@@ -217,14 +202,12 @@ print(lst_a * 3)
 print(len(lst_a))
 
 # 리스트의 값 수정하기
-# 교재 83p
 lst_c = [1, 2, 3]
 lst_c[2] = 4
 print(lst_c)
 
 # 리스트 관련 함수
 #  - del() : 요소 삭제 함수
-# 교재 84p
 del lst_c[1]
 print(lst_c)
 
@@ -233,43 +216,36 @@ del lst_d[2:]
 print(lst_d)
 
 #  - append() : 요소 추가 함수
-# 교재 85p
 lst_e = [1, 2, 3]
 lst_e.append(4)
 print(lst_e)
 
 #  - sort() : 요소 정렬
-# 교재 85p
 lst_f = [1, 4, 3, 2]
 lst_f.sort()
 print(lst_f)
 
 #  - reverse() : 리스트 뒤집기
-# 교재 85p
 lst_g = ['a', 'c', 'b']
 lst_g.reverse()
 print(lst_g)
 
 #  - index() : 인덱스 반환
-# 교재 86p
 lst_h = [1, 2, 3, 4, 5]
 print(lst_h.index(3))
 
 #  - insert() : 리스트에 요소 삽입
-# 교재 86p
 lst_i = [1, 2, 3]
 lst_i.insert(0, 4)
 lst_i.insert(3, 5)
 print(lst_i)
 
 #  - remove() : 특정 요소 제거
-# 교재 87p
 lst_j = [1, 2, 3, 1, 2, 3]
 lst_j.remove(3) # 제일먼저 나오는 3 1개만 지움
 print(lst_j)
 
 #  - pop() : 리스트의 요소 끄집어 내기(마지막 요소 제거)
-# 교재 87p
 lst_k = [1, 2, 3, 4]
 lst_k.pop()
 print(lst_k)
@@ -277,12 +253,10 @@ lst_k.pop(1)
 print(lst_k)
 
 #  - count() : 리스트에 포함된 요소의 개수 세기
-# 교재 88p
 lst_l = [1, 2, 3, 1]
 print(lst_l.count(1))
 
 #  - extend() : 리스트의 확장
-# 교재 88p
 lst_m = [1, 2, 3]
 lst_m.extend([4, 5])
 print(lst_m)
