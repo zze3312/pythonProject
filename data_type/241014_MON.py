@@ -432,4 +432,4 @@ b = int(input("b를 입력하세요 : "))
 if a > b :
     print("a가 b보다 크다")
 else :
-    print("b가 a보다 크다")
+    print("b가 a보다 크다") 
