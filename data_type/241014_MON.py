@@ -412,6 +412,8 @@ else :
 #   - x not in (리스트, 튜플, 문자열) : 리스트안에 값이 존재하지 않으면 참
 print(1 in [1, 2, 3])
 print(1 not in [1, 2, 3])
+print('a' in ('a', 'b', 'c'))
+print('j' not in 'python')
 
 # 주머니에 돈이 있으면 택시를 타고 가고, 없으면 걸어 가라
 pocket = ['paper', 'cellphone', 'money']
