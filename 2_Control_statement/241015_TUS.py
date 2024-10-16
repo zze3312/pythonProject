@@ -223,7 +223,7 @@ print("="*30)
 print("{0:^30}".format("메뉴"))
 print("="*30)
 print(f'{"주문번호":<8}{"메뉴":<12}{"가격":<10}')
-for i in (0, 1, 2, 3, 4) :
+for i in range(5) :
     menu_nm = menu_list2[i].split("_")[0]
     menu_price = menu_list2[i].split("_")[1]
 
