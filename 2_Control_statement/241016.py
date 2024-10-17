@@ -38,6 +38,8 @@ while num > 0 :
     print(num)
     num = num - 1
 
+# break : 가장 가까이에 있는 반복문을 빠져나간다
+
 coffee = 10
 money = 300
 while money :
