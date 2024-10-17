@@ -304,3 +304,18 @@ for i in a_10 :
     if chk :
         a_10_2.append(temp)
 print(a_10_2)
+
+
+# 문제 10 답
+# a = []
+# for i in range(1, input_num2) :
+#     a.append(0)
+#
+# for i in range(2, input_num2 - 1) :
+#     if a[i] == 0 :
+#         for j in range(i * 2, input_num2 - 1, i) :
+#             a[j] = 1
+#
+# for i in range(2, input_num2 - 1) :
+#     if a[i] == 0 :
+#         print(i, end=" ")
