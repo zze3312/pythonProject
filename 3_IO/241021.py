@@ -19,7 +19,7 @@ def calc (i, j, choice) :
 print(calc(1, 0, '%'))
 print(calc(i = 1, j = 0, choice='+'))
 
-# 여러개의 파라미터를 받는 함수 : def 함수명(*파라미터) : 
+# 여러개의 파라미터를 받는 함수 : def 함수명(*파라미터) :
 def add_many(*args) :
     result = 0
     for i in args :
@@ -107,16 +107,42 @@ print(result)
 # 사용자 입력 : input("안내문구")
 
 # 파일 읽기 : open(파일명, 파일열기모드)
+#  - 파일 열기 모드 : r(읽기), w(쓰기), a(추가)
 # 파일 쓰기 : write(쓸 내용)
-f = open("새파일.txt", 'w')
+f = open("new_file.txt", 'w')
 for i in range(1, 11):
     data = f"{i}번째 줄입니다\n"
     f.write(data)
 f.close()
 
-f = open("새파일.txt", 'r')
-lines = f.readline()
-print(lines)
-for line in lines:
+f = open("new_file.txt", 'r')
+while True:
+    line = f.readline()
+    if not line : break
     print(line)
 f.close()
+
+f = open("new_file.txt", 'r')
+lines = f.readlines()
+for line in lines :
+    print(line)
+f.close()
+
+f = open("new_file.txt", 'r')
+data = f.read()
+print(data)
+f.close()
+
+f = open("new_file.txt", 'r')
+for line in f :
+    print(line)
+f.close()
+
+f = open("new_file.txt", 'a')
+for i in range(11, 20):
+    data = (f"{i}번째 줄입니다\n")
+    f.write(data)
+f.close()
+
+with open("new_file2.txt", "w") as f :
+    f.write("Life is too short, you need python")
