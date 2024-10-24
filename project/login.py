@@ -1,7 +1,9 @@
 import sys
 
+from PyQt5.QtGui import QFont, QColor
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
+
 import funtion
 
 #UI파일 연결
@@ -13,43 +15,11 @@ class WindowClass(QMainWindow, form_class) :
     def __init__(self) :
         super().__init__()
         self.setupUi(self)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(6)
         self.btn_join.clicked.connect(self.go_join)
         self.btn_submit.clicked.connect(self.join)
         self.btn_cancel.clicked.connect(self.go_home)
         self.btn_login.clicked.connect(self.login)
-        self.btn_search.clicked.connect(self.search)
-        self.btn_cancel2.clicked.connect(self.go_home)
-        self.btn_search_page.clicked.connect(self.go_search)
-        self.search_gubun1.clicked.connect(self.chk_gubun) # 아이디 찾기
-        self.search_gubun2.clicked.connect(self.chk_gubun) # 비밀번호 찾기
-
-    def search(self):
-        userId = self.search_id.text()
-        userTel = self.search_tel.text()
-        gubun = ""
-        msg = ""
-
-        if self.search_gubun1.isChecked():
-            gubun = "아이디 찾기"
-            msg = f""
-        elif self.search_gubun2.isChecked():
-            gubun = "비밀번호 찾기"
-
-        result, id, pw = funtion.user.search(self, userId, userTel)
-
-        if result:
-            QMessageBox.information(self, gubun, "로그인 실패하셨습니다")
-        else:
-            pass
-
-    def chk_gubun(self):
-        if self.search_gubun1.isChecked():
-            self.label_id2.setHidden(True)
-            self.search_id.setHidden(True)
-        elif self.search_gubun2.isChecked():
-            self.label_id2.setHidden(False)
-            self.search_id.setHidden(False)
 
     def login(self):
         userId = self.login_id.text()
@@ -94,19 +64,14 @@ class WindowClass(QMainWindow, form_class) :
         else:
             QMessageBox.information(self, "실패", "회원가입 실패하셨습니다")
 
-
     def go_home(self):
         self.stackedWidget.setCurrentIndex(0)
 
     def go_join(self):
         self.stackedWidget.setCurrentIndex(1)
 
-    def go_search(self):
-        self.stackedWidget.setCurrentIndex(2)
-        self.chk_gubun()
-
     def go_main(self):
-        self.stackedWidget.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(2)
 
 
 if __name__ == "__main__" :

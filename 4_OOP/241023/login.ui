@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>449</width>
-    <height>509</height>
+    <width>751</width>
+    <height>515</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <rect>
      <x>10</x>
      <y>20</y>
-     <width>431</width>
+     <width>731</width>
      <height>481</height>
     </rect>
    </property>
@@ -26,14 +26,14 @@
     <string notr="true">background-color: rgb(153, 193, 241);</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>5</number>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QPushButton" name="btn_login">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>280</y>
+       <x>210</x>
+       <y>240</y>
        <width>321</width>
        <height>41</height>
       </rect>
@@ -45,8 +45,8 @@
     <widget class="QPushButton" name="btn_join">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>330</y>
+       <x>210</x>
+       <y>290</y>
        <width>321</width>
        <height>41</height>
       </rect>
@@ -58,8 +58,8 @@
     <widget class="QLineEdit" name="login_id">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>180</y>
+       <x>330</x>
+       <y>140</y>
        <width>201</width>
        <height>27</height>
       </rect>
@@ -74,8 +74,8 @@
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>220</y>
+       <x>220</x>
+       <y>180</y>
        <width>100</width>
        <height>20</height>
       </rect>
@@ -90,8 +90,8 @@
     <widget class="QLineEdit" name="login_pwd">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>220</y>
+       <x>330</x>
+       <y>180</y>
        <width>201</width>
        <height>27</height>
       </rect>
@@ -109,8 +109,8 @@
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>180</y>
+       <x>220</x>
+       <y>140</y>
        <width>100</width>
        <height>20</height>
       </rect>
@@ -125,8 +125,8 @@
     <widget class="QPushButton" name="btn_search_page">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>380</y>
+       <x>210</x>
+       <y>340</y>
        <width>321</width>
        <height>41</height>
       </rect>
@@ -140,8 +140,8 @@
     <widget class="QLabel" name="label_id">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>160</y>
+       <x>190</x>
+       <y>140</y>
        <width>100</width>
        <height>20</height>
       </rect>
@@ -156,8 +156,8 @@
     <widget class="QLineEdit" name="join_id">
      <property name="geometry">
       <rect>
-       <x>140</x>
-       <y>160</y>
+       <x>300</x>
+       <y>140</y>
        <width>250</width>
        <height>27</height>
       </rect>
@@ -172,8 +172,8 @@
     <widget class="QLabel" name="title">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>80</y>
+       <x>320</x>
+       <y>60</y>
        <width>151</width>
        <height>51</height>
       </rect>
@@ -194,8 +194,8 @@
     <widget class="QLabel" name="label_pwd">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>200</y>
+       <x>190</x>
+       <y>180</y>
        <width>100</width>
        <height>20</height>
       </rect>
@@ -210,8 +210,8 @@
     <widget class="QPushButton" name="btn_submit">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>380</y>
+       <x>230</x>
+       <y>360</y>
        <width>131</width>
        <height>61</height>
       </rect>
@@ -223,8 +223,8 @@
     <widget class="QLabel" name="label_pwd_chk">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>240</y>
+       <x>190</x>
+       <y>220</y>
        <width>100</width>
        <height>20</height>
       </rect>
@@ -239,8 +239,8 @@
     <widget class="QPushButton" name="btn_cancel">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>380</y>
+       <x>390</x>
+       <y>360</y>
        <width>131</width>
        <height>61</height>
       </rect>
@@ -252,8 +252,8 @@
     <widget class="QLineEdit" name="join_pwd">
      <property name="geometry">
       <rect>
-       <x>140</x>
-       <y>200</y>
+       <x>300</x>
+       <y>180</y>
        <width>250</width>
        <height>27</height>
       </rect>
@@ -271,8 +271,8 @@
     <widget class="QLineEdit" name="join_pwd_chk">
      <property name="geometry">
       <rect>
-       <x>140</x>
-       <y>240</y>
+       <x>300</x>
+       <y>220</y>
        <width>250</width>
        <height>27</height>
       </rect>
@@ -290,8 +290,8 @@
     <widget class="QLineEdit" name="join_tel">
      <property name="geometry">
       <rect>
-       <x>140</x>
-       <y>280</y>
+       <x>300</x>
+       <y>260</y>
        <width>250</width>
        <height>27</height>
       </rect>
@@ -312,8 +312,8 @@
     <widget class="QLabel" name="label_tel">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>280</y>
+       <x>190</x>
+       <y>260</y>
        <width>100</width>
        <height>20</height>
       </rect>
@@ -330,8 +330,8 @@
     <widget class="QLineEdit" name="search_id">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>240</y>
+       <x>310</x>
+       <y>250</y>
        <width>250</width>
        <height>27</height>
       </rect>
@@ -346,8 +346,8 @@
     <widget class="QLineEdit" name="search_tel">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>200</y>
+       <x>310</x>
+       <y>210</y>
        <width>250</width>
        <height>27</height>
       </rect>
@@ -368,8 +368,8 @@
     <widget class="QPushButton" name="btn_cancel2">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>320</y>
+       <x>380</x>
+       <y>330</y>
        <width>131</width>
        <height>61</height>
       </rect>
@@ -381,8 +381,8 @@
     <widget class="QLabel" name="title_2">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>70</y>
+       <x>250</x>
+       <y>80</y>
        <width>251</width>
        <height>51</height>
       </rect>
@@ -403,8 +403,8 @@
     <widget class="QPushButton" name="btn_search">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>320</y>
+       <x>220</x>
+       <y>330</y>
        <width>131</width>
        <height>61</height>
       </rect>
@@ -416,8 +416,8 @@
     <widget class="QLabel" name="label_tel2">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>200</y>
+       <x>200</x>
+       <y>210</y>
        <width>100</width>
        <height>20</height>
       </rect>
@@ -432,8 +432,8 @@
     <widget class="QLabel" name="label_id2">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>240</y>
+       <x>200</x>
+       <y>250</y>
        <width>100</width>
        <height>20</height>
       </rect>
@@ -448,8 +448,8 @@
     <widget class="QRadioButton" name="search_gubun1">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>140</y>
+       <x>210</x>
+       <y>150</y>
        <width>111</width>
        <height>25</height>
       </rect>
@@ -464,8 +464,8 @@
     <widget class="QRadioButton" name="search_gubun2">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>140</y>
+       <x>410</x>
+       <y>150</y>
        <width>111</width>
        <height>25</height>
       </rect>
@@ -479,8 +479,8 @@
     <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>200</y>
+       <x>340</x>
+       <y>160</y>
        <width>161</width>
        <height>61</height>
       </rect>
@@ -497,8 +497,8 @@
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>280</y>
+       <x>290</x>
+       <y>250</y>
        <width>201</width>
        <height>171</height>
       </rect>
@@ -516,6 +516,295 @@
      </property>
      <property name="scaledContents">
       <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_5">
+    <widget class="QListWidget" name="list_widget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>661</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="dragEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::MultiSelection</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="input_list">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>290</y>
+       <width>481</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="input_list2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>330</y>
+       <width>341</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="insert_spin">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>330</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_add">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>290</y>
+       <width>150</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(28, 113, 216);</string>
+     </property>
+     <property name="text">
+      <string>ADD</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_insert">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>330</y>
+       <width>150</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(28, 113, 216);</string>
+     </property>
+     <property name="text">
+      <string>INSERT</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_print">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>380</y>
+       <width>150</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(28, 113, 216);</string>
+     </property>
+     <property name="text">
+      <string>PRINT</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_print_multi">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>380</y>
+       <width>150</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(28, 113, 216);</string>
+     </property>
+     <property name="text">
+      <string>PRINT_MULTI</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_clear">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>380</y>
+       <width>150</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(28, 113, 216);</string>
+     </property>
+     <property name="text">
+      <string>CLEAR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_remove">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>380</y>
+       <width>150</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(28, 113, 216);</string>
+     </property>
+     <property name="text">
+      <string>REMOVE</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_6">
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>331</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_pte">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>60</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(28, 113, 216);</string>
+     </property>
+     <property name="text">
+      <string>Print Text Edit</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_cte">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>120</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(28, 113, 216);</string>
+     </property>
+     <property name="text">
+      <string>Clear Text Edit</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_sf">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>180</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(28, 113, 216);</string>
+     </property>
+     <property name="text">
+      <string>Set Font</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_sfi">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>240</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(28, 113, 216);</string>
+     </property>
+     <property name="text">
+      <string>Set Font Italic</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_sfcr">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>300</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(28, 113, 216);</string>
+     </property>
+     <property name="text">
+      <string>Set Font Color Red</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="input_fs">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>400</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Z003</family>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="minimum">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>370</y>
+       <width>66</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Font Size</string>
      </property>
     </widget>
    </widget>

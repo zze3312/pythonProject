@@ -13,15 +13,10 @@ class user:
 
         with open("member.json", "r") as f:
             memberList = json.load(f)
-        print(memberList)
-        # for user in memberList:
-        #     if user["id"] == id:
-        #         return False
-        #
-        # memberList.append(user_info_form)
-        # f = open("member.json", 'w')
-        # json.dump(memberList, f)
-        # f.close()
+
+        for member in memberList:
+            if member["id"] == id:
+                return False
 
         return True
 
