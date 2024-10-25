@@ -1,5 +1,7 @@
 from random import randint
 
+#test
+
 # 성적표
 class Student():
 
