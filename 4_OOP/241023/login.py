@@ -15,7 +15,7 @@ class WindowClass(QMainWindow, form_class) :
     def __init__(self) :
         super().__init__()
         self.setupUi(self)
-        self.stackedWidget.setCurrentIndex(6)
+        self.stackedWidget.setCurrentIndex(4)
         self.btn_join.clicked.connect(self.go_join)
         self.btn_submit.clicked.connect(self.join)
         self.btn_cancel.clicked.connect(self.go_home)
