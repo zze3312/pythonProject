@@ -26,7 +26,7 @@
     <string notr="true">background-color: rgb(246, 211, 45);</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="page1">
     <widget class="QFrame" name="frame_4">
@@ -265,7 +265,7 @@ border-radius:40px;
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="page">
       <widget class="QPushButton" name="menu_coffee_1_2">
@@ -1929,7 +1929,7 @@ border-radius:40px;
         <string>음료이름</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="cart_menu_plus">
        <property name="geometry">
         <rect>
          <x>180</x>
@@ -1954,7 +1954,7 @@ border-radius:20px;</string>
         <string>+</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="cart_menu_minus">
        <property name="geometry">
         <rect>
          <x>40</x>
@@ -2018,7 +2018,7 @@ border-radius:20px;</string>
         <string>￦</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_73">
+      <widget class="QLabel" name="total_menu_price">
        <property name="geometry">
         <rect>
          <x>460</x>
@@ -2039,11 +2039,11 @@ border-radius:20px;</string>
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
-      <widget class="QLabel" name="cart_menu_name_2">
+      <widget class="QLabel" name="label_shot">
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>180</y>
+         <x>30</x>
+         <y>230</y>
          <width>181</width>
          <height>31</height>
         </rect>
@@ -2057,11 +2057,11 @@ border-radius:20px;</string>
         <string>샷 추가</string>
        </property>
       </widget>
-      <widget class="QLabel" name="cart_menu_name_3">
+      <widget class="QLabel" name="label_syrup">
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>230</y>
+         <x>30</x>
+         <y>280</y>
          <width>181</width>
          <height>31</height>
         </rect>
@@ -2075,11 +2075,11 @@ border-radius:20px;</string>
         <string>헤이즐넛 시럽</string>
        </property>
       </widget>
-      <widget class="QLabel" name="cart_menu_name_4">
+      <widget class="QLabel" name="label_milk">
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>280</y>
+         <x>30</x>
+         <y>330</y>
          <width>181</width>
          <height>31</height>
         </rect>
@@ -2093,11 +2093,11 @@ border-radius:20px;</string>
         <string>두유로 변경</string>
        </property>
       </widget>
-      <widget class="QLabel" name="cart_menu_name_5">
+      <widget class="QLabel" name="label_pearl">
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>330</y>
+         <x>30</x>
+         <y>380</y>
          <width>181</width>
          <height>31</height>
         </rect>
@@ -2111,11 +2111,11 @@ border-radius:20px;</string>
         <string>펄 추가</string>
        </property>
       </widget>
-      <widget class="QLabel" name="cart_menu_cnt_2">
+      <widget class="QLabel" name="shot_cnt">
        <property name="geometry">
         <rect>
-         <x>470</x>
-         <y>180</y>
+         <x>460</x>
+         <y>230</y>
          <width>66</width>
          <height>31</height>
         </rect>
@@ -2126,17 +2126,17 @@ border-radius:20px;</string>
         </font>
        </property>
        <property name="text">
-        <string>1</string>
+        <string>0</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="shot_plus">
        <property name="geometry">
         <rect>
-         <x>560</x>
-         <y>180</y>
+         <x>550</x>
+         <y>230</y>
          <width>31</width>
          <height>31</height>
         </rect>
@@ -2157,11 +2157,11 @@ border-radius:15px;</string>
         <string>+</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QPushButton" name="shot_minus">
        <property name="geometry">
         <rect>
-         <x>420</x>
-         <y>180</y>
+         <x>410</x>
+         <y>230</y>
          <width>31</width>
          <height>31</height>
         </rect>
@@ -2182,14 +2182,383 @@ border-radius:15px;</string>
         <string>ㅡ</string>
        </property>
       </widget>
+      <widget class="QPushButton" name="syrup_plus">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>280</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>24</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(154, 153, 150);
+color: rgb(255, 255, 255);
+border-radius:15px;</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="syrup_minus">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>280</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(154, 153, 150);
+color: rgb(255, 255, 255);
+border-radius:15px;</string>
+       </property>
+       <property name="text">
+        <string>ㅡ</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="syrup_cnt">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>280</y>
+         <width>66</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="milk_plus">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>330</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>24</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(154, 153, 150);
+color: rgb(255, 255, 255);
+border-radius:15px;</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="milk_minus">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>330</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(154, 153, 150);
+color: rgb(255, 255, 255);
+border-radius:15px;</string>
+       </property>
+       <property name="text">
+        <string>ㅡ</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="milk_cnt">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>330</y>
+         <width>66</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pearl_plus">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>380</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>24</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(154, 153, 150);
+color: rgb(255, 255, 255);
+border-radius:15px;</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pearl_minus">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>380</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(154, 153, 150);
+color: rgb(255, 255, 255);
+border-radius:15px;</string>
+       </property>
+       <property name="text">
+        <string>ㅡ</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pearl_cnt">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>380</y>
+         <width>66</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_58">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>230</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>￦ 500</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_68">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>280</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>￦ 500</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_74">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>330</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>￦ 500</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_75">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>380</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>￦ 1,000</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="title">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>311</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>유료 옵션</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_option_ok">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>500</y>
+         <width>211</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>22</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(12, 44, 166);
+border-radius:30px;
+border: 5px solid rgb(12, 44, 166);</string>
+       </property>
+       <property name="text">
+        <string>선택완료</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_option_del">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>500</y>
+         <width>211</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>22</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(12, 44, 166);
+background-color: rgb(255, 255, 255);
+border-radius:30px;
+border: 5px solid rgb(12, 44, 166);</string>
+       </property>
+       <property name="text">
+        <string>취소</string>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QPushButton" name="btn_home">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>0</y>
-       <width>61</width>
+       <x>20</x>
+       <y>1</y>
+       <width>51</width>
        <height>50</height>
       </rect>
      </property>
@@ -2204,8 +2573,7 @@ border-radius:15px;</string>
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: 0px;
-</string>
+      <string notr="true">border: 8px;</string>
      </property>
      <property name="text">
       <string>&lt;</string>
@@ -2457,6 +2825,15 @@ color: rgb(255, 255, 255);</string>
       <string>결제하기</string>
      </property>
     </widget>
+    <zorder>btn_coffee</zorder>
+    <zorder>btn_noncoffee</zorder>
+    <zorder>btn_packsccino</zorder>
+    <zorder>btn_dessert</zorder>
+    <zorder>btn_home</zorder>
+    <zorder>scrollArea</zorder>
+    <zorder>frame</zorder>
+    <zorder>btn_submit</zorder>
+    <zorder>subWidget</zorder>
    </widget>
    <widget class="QWidget" name="page_5">
     <widget class="QFrame" name="frame_2">
@@ -3195,7 +3572,7 @@ border-radius:25px;</string>
       <widget class="QLabel" name="label_63">
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>15</x>
          <y>30</y>
          <width>91</width>
          <height>41</height>
@@ -3265,26 +3642,11 @@ border-radius:25px;</string>
        </property>
       </widget>
      </widget>
-     <widget class="QListWidget" name="cart_list2">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>310</y>
-        <width>541</width>
-        <height>411</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>15</pointsize>
-       </font>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_70">
       <property name="geometry">
        <rect>
         <x>550</x>
-        <y>760</y>
+        <y>700</y>
         <width>31</width>
         <height>31</height>
        </rect>
@@ -3307,7 +3669,7 @@ border-radius:25px;</string>
       <property name="geometry">
        <rect>
         <x>280</x>
-        <y>760</y>
+        <y>700</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -3330,7 +3692,7 @@ border-radius:25px;</string>
       <property name="geometry">
        <rect>
         <x>400</x>
-        <y>760</y>
+        <y>700</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -3354,7 +3716,7 @@ border-radius:25px;</string>
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>790</y>
+        <y>730</y>
         <width>211</width>
         <height>51</height>
        </rect>
@@ -3379,7 +3741,7 @@ border-radius:25px</string>
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>730</y>
+        <y>670</y>
         <width>211</width>
         <height>51</height>
        </rect>
@@ -3401,18 +3763,63 @@ border-radius:25px
        <string>뒤로가기</string>
       </property>
      </widget>
+     <widget class="QTableWidget" name="cart_list2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>330</y>
+        <width>541</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>메뉴명</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>샷</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>시럽</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>두유로변경</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>펄</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>개수</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>금액</string>
+       </property>
+      </column>
+     </widget>
      <zorder>label_55</zorder>
      <zorder>label_56</zorder>
      <zorder>btn_pay_card</zorder>
      <zorder>btn_pay_coupon</zorder>
      <zorder>btn_pay_kakao</zorder>
      <zorder>btn_pay_payco</zorder>
-     <zorder>cart_list2</zorder>
      <zorder>total_price2</zorder>
      <zorder>label_70</zorder>
      <zorder>label_71</zorder>
      <zorder>btn_del_menu_all</zorder>
      <zorder>btn_back2</zorder>
+     <zorder>cart_list2</zorder>
     </widget>
    </widget>
    <widget class="QWidget" name="page_9">
@@ -3486,9 +3893,9 @@ background-color: rgb(255, 255, 255);</string>
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>280</y>
+       <y>210</y>
        <width>471</width>
-       <height>231</height>
+       <height>351</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -3505,7 +3912,7 @@ background-color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>70</x>
-        <y>60</y>
+        <y>210</y>
         <width>341</width>
         <height>51</height>
        </rect>
@@ -3528,7 +3935,7 @@ background-color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>110</x>
-        <y>130</y>
+        <y>280</y>
         <width>261</width>
         <height>31</height>
        </rect>
@@ -3545,9 +3952,502 @@ background-color: rgb(255, 255, 255);</string>
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
+     <widget class="QLabel" name="label_77">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>30</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>주문번호</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_order_cnt">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>90</y>
+        <width>221</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>71</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="page_11"/>
+   <widget class="QWidget" name="page_16">
+    <widget class="QFrame" name="frame_12">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>150</y>
+       <width>471</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:20px;
+background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_78">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>380</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>보유 스탬프 </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_81">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>450</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>3초뒤 메인화면으로 이동합니다</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_82">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>30</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>스탬프 적립 완료</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="new_stamp_cnt">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>260</y>
+        <width>221</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>71</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_84">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>100</y>
+        <width>141</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>image/stamp.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="total_stamp_cnt">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>380</y>
+        <width>91</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_11">
+    <widget class="QFrame" name="frame_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>591</width>
+       <height>851</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_76">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>22</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>관리자</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_sales">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>매출관리</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_mem">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>70</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>회원관리</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_pwd">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>70</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>비밀번호변경</string>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="admin_widget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>571</width>
+        <height>731</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">b</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="page_13">
+       <widget class="QTableWidget" name="sales_table">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>571</width>
+          <height>731</height>
+         </rect>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>메뉴명</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>판매량</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>판매 금액</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>판매일</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_14">
+       <widget class="QTableWidget" name="member_table">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>571</width>
+          <height>731</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>핸드폰 번호</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>스탬프</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_15">
+       <widget class="QFrame" name="frame_13">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>571</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QPushButton" name="btn_update_pwd">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>160</y>
+           <width>141</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>변경하기</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_85">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>현재 비밀번호</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="input_admin_pwd">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>60</y>
+           <width>411</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>변경할 관리자 비밀번호를 입력해주세요</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_83">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>비밀번호 확인</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="input_admin_pwd_now">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>20</y>
+           <width>411</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>현재 사용중인 비밀번호를 입력해주세요</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_79">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>비밀번호</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="input_admin_pwd_chk">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>100</y>
+           <width>411</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>한번 더 입력해주세요</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
   </widget>
   <widget class="QLabel" name="label_49">
    <property name="geometry">
@@ -3577,15 +4477,132 @@ background-color: rgb(255, 255, 255);</string>
   <widget class="QPushButton" name="btn_admin">
    <property name="geometry">
     <rect>
-     <x>520</x>
+     <x>557</x>
      <y>20</y>
-     <width>88</width>
+     <width>51</width>
      <height>27</height>
     </rect>
    </property>
    <property name="text">
     <string>관리자</string>
    </property>
+  </widget>
+  <widget class="QFrame" name="admin_login_popup">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>195</x>
+     <y>380</y>
+     <width>261</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_10">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(246, 245, 244);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btn_admin_login_close">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>5</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>x</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_73">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>5</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>관리자 로그인</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_admin_login">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>100</y>
+      <width>90</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>로그인</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_user_pwd">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>50</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>관리자 비밀번호를 입력해주세요</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
