@@ -3,6 +3,7 @@ import json
 import datetime
 
 from PyQt5.QtCore import *
+from PyQt5.QtGui import QIntValidator
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
 
@@ -156,8 +157,26 @@ class WindowClass(QMainWindow, form_class) :
 
         # 관리자
         self.btn_admin.clicked.connect(self.go_admin_sub)
-        self.btn_admin_login_close.clicked.connect(lambda: self.admin_login_popup.setHidden(True))
+        self.btn_admin_login_close.clicked.connect(self.admin_pop_close)
         self.btn_admin_login.clicked.connect(self.admin_login)
+        self.input_user_pwd.mousePressEvent = self.open_pwd_pop
+        self.input_admin_pwd_now.setValidator(QIntValidator(self))
+        self.input_admin_pwd.setValidator(QIntValidator(self))
+        self.input_admin_pwd_chk.setValidator(QIntValidator(self))
+
+        # 관리자 비밀번호 입력창
+        self.btn_admin_0.clicked.connect(self.admin_pwd_input)
+        self.btn_admin_1.clicked.connect(self.admin_pwd_input)
+        self.btn_admin_2.clicked.connect(self.admin_pwd_input)
+        self.btn_admin_3.clicked.connect(self.admin_pwd_input)
+        self.btn_admin_4.clicked.connect(self.admin_pwd_input)
+        self.btn_admin_5.clicked.connect(self.admin_pwd_input)
+        self.btn_admin_6.clicked.connect(self.admin_pwd_input)
+        self.btn_admin_7.clicked.connect(self.admin_pwd_input)
+        self.btn_admin_8.clicked.connect(self.admin_pwd_input)
+        self.btn_admin_9.clicked.connect(self.admin_pwd_input)
+        self.btn_adm_del_all.clicked.connect(self.admin_pwd_input)
+        self.btn_adm_del_one.clicked.connect(self.admin_pwd_input)
 
         self.btn_sales.clicked.connect(lambda: self.go_admin("sales"))
         self.btn_mem.clicked.connect(lambda: self.go_admin("member"))
@@ -174,6 +193,29 @@ class WindowClass(QMainWindow, form_class) :
         self.btn_pay_payco.mousePressEvent = self.fnc_pay
 
 
+    def admin_pwd_input(self):
+        num = self.sender().objectName().split('_')[2]
+        admin_pwd = self.input_user_pwd.text()
+        try :
+            int(num)
+            admin_pwd += num
+        except:
+            gubun = self.sender().objectName().split('_')[3]
+            if gubun == 'all':
+                admin_pwd = ''
+            else:
+                admin_pwd = admin_pwd[:len(admin_pwd)-1]
+
+        self.input_user_pwd.setText(admin_pwd)
+
+
+    def admin_pop_close(self):
+        self.admin_login_popup.setHidden(True)
+        self.input_admin_btns.setHidden(True)
+
+    def open_pwd_pop(self, event):
+        self.input_admin_btns.setHidden(False)
+
     def sales_table_view(self):
         self.sales_table.setColumnWidth(0, 268)
         self.sales_table.setColumnWidth(1, 100)
@@ -184,10 +226,10 @@ class WindowClass(QMainWindow, form_class) :
         self.sales_table.setHorizontalHeaderLabels(["메뉴명", "판매량", "판매 금액", "판매일"])
 
 
-        with open("admin_sales.json", "r") as f:
+        with open("data/admin_sales.json", "r") as f:
             sales_list = json.load(f)
 
-        with open("menu.json", "r") as f:
+        with open("data/menu.json", "r") as f:
             menu_list = json.load(f)
 
         rowCnt = len(sales_list)
@@ -225,7 +267,7 @@ class WindowClass(QMainWindow, form_class) :
         self.member_table.clear()
         self.member_table.setHorizontalHeaderLabels(["핸드폰 번호", "스탬프"])
 
-        with open("member.json", "r") as f:
+        with open("data/member.json", "r") as f:
             member_list = json.load(f)
 
         rowCnt = len(member_list)
@@ -247,7 +289,7 @@ class WindowClass(QMainWindow, form_class) :
         input_pwd_chk = self.input_admin_pwd_chk.text()
         change_info = {}
 
-        with open("admin_info.json", 'r') as f:
+        with open("data/admin_info.json", 'r') as f:
             now_info = json.load(f)
 
         change_json = list()
@@ -263,7 +305,7 @@ class WindowClass(QMainWindow, form_class) :
             change_info["password"] = input_pwd
             change_json.append(change_info)
 
-            with open("admin_info.json", "w") as f:
+            with open("data/admin_info.json", "w") as f:
                 json.dump(change_json, f)
 
             QMessageBox.information(self, "알림", "비밀번호가 변경되었습니다. 다시 로그인 해주세요")
@@ -285,7 +327,7 @@ class WindowClass(QMainWindow, form_class) :
 
     def admin_login(self):
 
-            with open("admin_info.json", 'r') as f:
+            with open("data/admin_info.json", 'r') as f:
                 admin_info = json.load(f)[0]
 
             input_pwd = self.input_user_pwd.text()
@@ -293,6 +335,7 @@ class WindowClass(QMainWindow, form_class) :
             if input_pwd != '':
                 if input_pwd == admin_info["password"]:
                     self.admin_login_popup.setHidden(True)
+                    self.input_admin_btns.setHidden(True)
                     self.mainWidget.setCurrentIndex(MAIN_PAGE_INDEX["admin"])
                     self.go_admin("sales")
                     self.input_user_pwd.setText("")
@@ -386,7 +429,7 @@ class WindowClass(QMainWindow, form_class) :
 
 
         # 메뉴명/가격 가져오기
-        with open("menu.json", "r") as f:
+        with open("data/menu.json", "r") as f:
             menu_list = json.load(f)
 
         for menu in menu_list:
@@ -529,7 +572,7 @@ class WindowClass(QMainWindow, form_class) :
         total_cnt = 0
 
         # 관리자 매출에 등록
-        with open("admin_sales.json", "r") as fr:
+        with open("data/admin_sales.json", "r") as fr:
             sales_list = json.load(fr)
         now = datetime.datetime.now()
 
@@ -555,7 +598,7 @@ class WindowClass(QMainWindow, form_class) :
             if sales_add:
                 sales_list.append(input_sales)
 
-        with open("admin_sales.json", "w") as fw:
+        with open("data/admin_sales.json", "w") as fw:
             json.dump(sales_list, fw)
 
         order_cnt += 1
@@ -563,7 +606,7 @@ class WindowClass(QMainWindow, form_class) :
 
         # 스탬프 추가
         if membership_yn :
-            with open("member.json", "r") as fr2:
+            with open("data/member.json", "r") as fr2:
                 member_list = json.load(fr2)
 
             stamp_ok = False
@@ -580,7 +623,7 @@ class WindowClass(QMainWindow, form_class) :
                 member_list.append(mem_info)
                 membership_total_cnt = mem_info["stamp_cnt"]
 
-            with open("member.json", "w") as fw2:
+            with open("data/member.json", "w") as fw2:
                 json.dump(member_list, fw2)
 
         cnt = 5
@@ -684,6 +727,7 @@ class WindowClass(QMainWindow, form_class) :
 
     def go_home(self):
         self.admin_login_popup.setHidden(True)
+        self.input_admin_btns.setHidden(True)
         self.timeVar = QTimer()
         self.timeVar.setInterval(100)
         self.timeVar.stop()

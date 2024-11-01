@@ -11,7 +11,7 @@ class user:
         user_info_form["pwd"] = pwd
         user_info_form["tel"] = tel
 
-        with open("../../project/member.json", "r") as f:
+        with open("../../project/data/member.json", "r") as f:
             memberList = json.load(f)
         print(memberList)
         # for user in memberList:
@@ -28,7 +28,7 @@ class user:
     def search(self, id, tel):
         pwd = ""
 
-        f = open("../../project/member.json", "r")
+        f = open("../../project/data/member.json", "r")
         memberList = f.readlines()
         f.close()
 
